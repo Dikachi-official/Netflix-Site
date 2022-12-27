@@ -26,13 +26,13 @@ SECRET_KEY = 'django-insecure-ldvz1i345(!36iv=6!eh10thg+013!m!xw%q$r!87i8w#g$g%k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.sites',    #ONLY THIS FIRST FOR ALLAUTH AUTHENTICATION
+    'django.contrib.sites',  # ONLY THIS FIRST FOR ALLAUTH AUTHENTICATION
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'netflixapp',
     'allauth',
     'allauth.account',
-    'allauth.socialaccount',    #THESE ARE NECESSARY FOR ALLAUTH AUTHENTICATION
+    'allauth.socialaccount',  # THESE ARE NECESSARY FOR ALLAUTH AUTHENTICATION
 ]
 
 MIDDLEWARE = [
@@ -122,11 +122,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 
-AUTH_USER_MODEL = 'netflixapp.CustomUser'     #TO REGISTER OUR APP NAME WITH ATTRIBUTE OF OUR MODEL CUSTOMIZED CLASS IN MODELS
+# TO REGISTER OUR APP NAME WITH ATTRIBUTE OF OUR MODEL CUSTOMIZED CLASS IN MODELS
+AUTH_USER_MODEL = 'netflixapp.CustomUser'
 
-AUTHENTICATION_BACKENDS = [ #needed for allauth
+AUTHENTICATION_BACKENDS = [  # needed for allauth
 
-     #Needed to login by username in Django admin, regardless of `allauth`
+    # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
 
     # `allauth` specific authentication methods, such as login by e-mail
@@ -134,13 +135,12 @@ AUTHENTICATION_BACKENDS = [ #needed for allauth
 ]
 
 
+SITE_ID = 1  # SITE ID IS IMPORTANT FOR ALLAUTH AUTHENTICATION
 
-SITE_ID = 1     #SITE ID IS IMPORTANT FOR ALLAUTH AUTHENTICATION
+STATIC_URL = 'static/'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-
-MEDIA_URL = '/media/'
+MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
@@ -152,7 +152,7 @@ LOGIN_URL = 'login'
 
 
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
-ACCOUNT_EMAIL_REQUIRED = True   #FOR ALLAUTH IN EMAILS VERIFICATION
-ACCOUNT_EMAIL_VERIFICATION = 'none'   #TO AVOID VERIFICATION AT EVERY LOGIN
+ACCOUNT_EMAIL_REQUIRED = True  # FOR ALLAUTH IN EMAILS VERIFICATION
+ACCOUNT_EMAIL_VERIFICATION = 'none'  # TO AVOID VERIFICATION AT EVERY LOGIN
 ACCOUNT_USERNAME_REQUIRED = False
 LOGIN_REDIRECT_URL = 'netflixapp:Home'

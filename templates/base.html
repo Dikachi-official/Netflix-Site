@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix</title>
-    <link rel="stylesheet" href="{% static 'css/style.css'%}" />
+    <link href="{% static "css/style.css/" %}" rel="stylesheet" />
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
   </head>
@@ -30,6 +30,7 @@
           Log Out
         </a>
         {% else %}
+
         <!--=== if user isnt logged in, show login ==-->
         <a
           href="{% url 'account_login' %}"
