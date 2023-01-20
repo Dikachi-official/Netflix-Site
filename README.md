@@ -5,9 +5,9 @@
 <h2>Built With</h2>
 <strong><i><p>Major Languages</p><i></strong>
 <hr>
-<input type="checkbox"><label for="title">HTML</label><br>
-<input type="checkbox"><label for="title">CSS</label><br>
-<input type="checkbox"><label for="title">PYTHON</label><br>
+<li><label for="title">HTML</li>
+<li><label for="title">CSS</li>
+<li><label for="title">PYTHON</li>
 <input type="checkbox"><label for="title">JAVASCRIPT</label><br>
 <h2>Framework</h2>
 <input type="checkbox"><label for="title">DJANGO</label><br>
