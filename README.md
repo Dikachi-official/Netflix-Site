@@ -8,7 +8,7 @@
 <li><label for="title">HTML</li>
 <li><label for="title">CSS</li>
 <li><label for="title">PYTHON</li>
-<input type="checkbox"><label for="title">JAVASCRIPT</label><br>
+<li><label for="title">JAVASCRIPT</li><br>
 <h2>Framework</h2>
 <input type="checkbox"><label for="title">DJANGO</label><br>
 <h2>Prerequisites</h2>
