@@ -10,7 +10,7 @@
 <li><label for="title">PYTHON</li>
 <li><label for="title">JAVASCRIPT</li><br>
 <h2>Framework</h2>
-<input type="checkbox"><label for="title">DJANGO</label><br>
+<li><label for="title">DJANGO</li><br>
 <h2>Prerequisites</h2>
 <ul>
 <li> A web Browser (like Google Chrome...)</li>
