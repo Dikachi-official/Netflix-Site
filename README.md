@@ -17,7 +17,7 @@
 <li> A code editor (like VScode...)</li>
 </ul>
 <h2>Creator</h2>
-<p><i class="ri-account-circle-fill"></i>Dikachi-official</p>
+<li>Dikachi-official</li>
 <h2>Contributions</h2>
 <li>Contributions, and feature requests are welcomed</li>
 <h2 align="center">Show your support</h2>
