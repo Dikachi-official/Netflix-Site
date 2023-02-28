@@ -4,7 +4,7 @@
 <p>Netflix Clone made with Django framework</p>
 <h2>Built With</h2>
 <strong><i><p>Major Languages</p><i></strong>
-<hr>
+<hr/>
 <li><label for="title">HTML</li>
 <li><label for="title">CSS</li>
 <li><label for="title">PYTHON</li>
